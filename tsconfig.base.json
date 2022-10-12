@@ -19,7 +19,7 @@
     "paths": {
       "@finastra/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@finastra/features/home": ["libs/features/home/src/index.ts"],
-      "@finastra/services/cats": ["libs/services/cats/src/index.ts"],
+      "@finastra/services/randomuser": ["libs/services/randomuser/src/index.ts"],
       "@finastra/services/proxy": ["libs/services/proxy/src/index.ts"]
     }
   },

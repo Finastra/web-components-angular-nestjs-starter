@@ -1,23 +1,33 @@
-<uxg-global-nav
-  [appName]="appName"
-  [appContent]="appContent"
-  [navbarAction]="navbarAction"
-  [navigationNodes]="navigationNodes"
-  (brandAction)="brandAction()"
-  (nodeChosen)="nodeChosen($event)"
->
-</uxg-global-nav>
+<fds-app-bar class="sticky-app-bar" appname="Super App" logoredirecturi="">
+  <div *ngIf="innerWidth > 580; then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>
+    <fds-launchpad slot="actions" [apps]="dummyApps"></fds-launchpad>
+    <fds-icon-button icon="search" slot="actions"></fds-icon-button>
+    <fds-icon-button icon="notifications_none" slot="actions"></fds-icon-button>
+    <fds-icon-button icon="help_outline" slot="actions"></fds-icon-button>
+    <fds-user-profile slot="actions" username="Ping Yuan">
+      <div slot="userInfo">ping.yuan@finastra.com</div>
+      <div slot="actions">
+        <fds-button fullwidth label="Logout" icon="logout"></fds-button>
+        <fds-button text fullwidth label="View profile"></fds-button>
+      </div>
+    </fds-user-profile>
+  </ng-template>
+  <ng-template #elseBlock>
+    <fds-icon-button icon="menu" slot="navigationIcon"></fds-icon-button>
+    <fds-icon-button icon="more_vert" slot="actions"></fds-icon-button>
+  </ng-template>
+</fds-app-bar>
 
-<ng-template #appContent>
-  <router-outlet></router-outlet>
-</ng-template>
+<div class="app">
+  <fds-icon-bar class="icon-bar" *ngIf="innerWidth > 560">
+    <fds-icon-bar-item data-tippy-content="Home" current icon="home" notification="2"></fds-icon-bar-item>
+    <fds-icon-bar-item label="Account" data-tippy-content="Account" icon="credit_card"></fds-icon-bar-item>
+    <fds-icon-bar-item label="Calendar" data-tippy-content="Calendar" icon="event" notification="1"></fds-icon-bar-item>
+    <fds-icon-bar-item data-tippy-content="Settings" slot="footer" icon="settings"></fds-icon-bar-item>
+  </fds-icon-bar>
 
-<ng-template #navbarAction>
-  <button mat-icon-button color="neutral" aria-label="notifications" aria-expanded="true">
-    <mat-icon>notifications</mat-icon>
-  </button>
-
-  <button mat-icon-button color="gradient" aria-label="uxp-navbar-user-button">
-    <mat-icon>account_circle</mat-icon>
-  </button>
-</ng-template>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

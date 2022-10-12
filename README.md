@@ -1,23 +1,23 @@
-<h1 align="center">Angular NestJS Starter</h1>
+<h1 align="center">Web Components & Angular</h1>
 
 <p align="center">
-  <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="Angular Logo" height="120"/>
-  <img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" height="120" alt="Nx Logo">
-  <img src="https://nestjs.com/img/logo-small.svg" height="120" alt="Nest Logo" />
+  <img src="https://web-components-resources.appspot.com/static/logo.svg" alt="Angular Logo" height="120"/>
+  <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" alt="Angular Logo" height="120"/>
   <br>
+  <span><b>Build with 💜 with <a href="https://github.com/Finastra/finastra-design-system/blob/master/README.md" target="_blank">Design System</a></b></span>
   <br>
-  <blockquote align="center"><h3>Angular & NestJS starter for enterprise-grade full-stack projects, built under a clean architecture that helps to scale and maintain a fast workflow.</h3></blockquote>
+  <blockquote align="center"><h3>Web-components with Angular & NestJS starter for enterprise-grade full-stack projects, built under a clean architecture that helps to scale and maintain a fast workflow.</h3></blockquote>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Finastra/angular-nestjs-starter/actions?query=workflow%3ABuild">
-  <img src="https://github.com/Finastra/angular-nestjs-starter/workflows/Build/badge.svg" alt="Build status" />
+  <a href="https://github.com/Finastra/web-components-angular-nestjs-starter/actions?query=workflow%3ABuild">
+  <img src="https://github.com/Finastra/web-components-angular-nestjs-starter/workflows/Build/badge.svg" alt="Build status" />
   </a>
-  <a href="./LICENSE.md"><img src="https://img.shields.io/github/license/finastra/angular-nestjs-starter" alt="Repo License" /></a>
-  <a href="https://github.com/Finastra/angular-nestjs-starter/issues">
+  <a href="./LICENSE.md"><img src="https://img.shields.io/github/license/finastra/web-components-angular-nestjs-starter" alt="Repo License" /></a>
+  <a href="https://github.com/Finastra/web-components-angular-nestjs-starter/issues">
     <img src="https://img.shields.io/badge/PRs-welcome-green" alt="PRs welcome"/>
   </a>
-  <a href="https://gitpod.io/#https://github.com/Finastra/angular-nestjs-starter">
+  <a href="https://gitpod.io/#https://github.com/Finastra/web-components-angular-nestjs-starter">
     <img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod">
   </a>
   <a href="https://github.com/facebook/jest">
@@ -97,6 +97,8 @@ Server
   - Go to [apps/server/src/main.ts](./apps/server/src/main.ts) and uncomment
   - Go to [apps/server/src/app/app.module.ts](./apps/server/src/app/app.module.ts) and uncomment
 
+> For more details about web-components here is the [Cookbook](https://finastra.github.io/finastra-design-system) 📖
+
 <br>
 
 ## Environement variables
@@ -104,7 +106,6 @@ Server
 | Variable         | Default value                                     |
 | :--------------- | :------------------------------------------------ |
 | `PORT`           | `3000`                                            |
-| `CATS_API_KEY`   |                                                   |
 | `OIDC_CLIENT_ID` |                                                   |
 | `CLIENT_SECRET`  |                                                   |
 | `SESSION_SECRET` | Generated uiid                                    |

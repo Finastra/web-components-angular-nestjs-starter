@@ -1,23 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-import { Cat, CatsService } from '@finastra/services/cats';
-import { EMPTY, expand, filter, map, Observable } from 'rxjs';
+import { RandomUserService, User } from '@finastra/services/randomuser';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'finastra-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  cat$: Observable<Cat>;
+  users$: Observable<User[]>;
 
-  constructor(private catsService: CatsService) {}
+  constructor(private randomUserService: RandomUserService) { }
 
   ngOnInit(): void {
-    const query$ = this.catsService.getCats().pipe(map((cats) => cats[0]));
+    this.users$ = this.randomUserService.getRandomUsers();
+  }
 
-    this.cat$ = query$.pipe(
-      expand((cat) => (cat.hasOwnProperty('breeds') && cat.breeds.length > 0 ? EMPTY : query$)),
-      filter((cat) => cat.breeds.length > 0)
-    );
+  call(phone: string) {
+    console.log('call:', phone);
+  }
+
+  email(email: string) {
+    console.log('email:', email);
   }
 }

@@ -1,0 +1,30 @@
+@use '@finastra/fds-theme' as fds;
+
+:host {
+  @include fds.use-light-theme();
+
+  @media (prefers-color-scheme: dark) {
+    @include fds.use-dark-theme();
+  }
+}
+
+.title {
+  @include fds.typography(headline-3);
+  @include fds.text-color(on-surface);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--fds-spacing-3, 16px);
+
+  .list {
+    max-width: 600px;
+
+    .thumb {
+      width: 32px;
+      height: auto;
+      border-radius: 50%;
+    }
+  }
+}

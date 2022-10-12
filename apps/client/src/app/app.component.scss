@@ -1,0 +1,33 @@
+@use '@finastra/fds-theme' as fds;
+
+$appbar: 136px;
+
+.sticky-app-bar {
+  width: 100%;
+}
+
+.app {
+  display: flex;
+  gap: var(--fds-spacing-3, 16px);
+  @include fds.padding-y(3);
+  @include fds.padding-x(2);
+
+  .icon-bar {
+    height: calc(100vh - $appbar);
+  }
+
+  .content {
+    height: calc(100vh - 96px);
+    flex: auto;
+    overflow-y: auto;
+  }
+}
+
+fds-user-profile fds-button {
+  line-height: 0px;
+  padding: var(--fds-spacing-0) var(--fds-spacing-3) var(--fds-spacing-2) var(--fds-spacing-3);
+}
+
+fds-user-profile fds-button+fds-button {
+  margin-top: var(--fds-spacing-2);
+}

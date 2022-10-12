@@ -182,18 +182,18 @@
         }
       }
     },
-    "services-cats": {
+    "services-randomuser": {
       "$schema": "../../../node_modules/nx/schemas/project-schema.json",
       "projectType": "library",
-      "root": "libs/services/cats",
-      "sourceRoot": "libs/services/cats/src",
+      "root": "libs/services/randomuser",
+      "sourceRoot": "libs/services/randomuser/src",
       "prefix": "finastra",
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/services/cats"],
+          "outputs": ["coverage/libs/services/randomuser"],
           "options": {
-            "jestConfig": "libs/services/cats/jest.config.ts",
+            "jestConfig": "libs/services/randomuser/jest.config.ts",
             "passWithNoTests": true
           }
         },
@@ -201,8 +201,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/services/cats/src/**/*.ts",
-              "libs/services/cats/src/**/*.html"
+              "libs/services/randomuser/src/**/*.ts",
+              "libs/services/randomuser/src/**/*.html"
             ]
           }
         }

@@ -1,19 +1,22 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { SkeletonTextModule } from '@finastra/angular-components/skeleton-text';
-import { ServicesCatsModule } from '@finastra/services/cats';
+import '@finastra/card';
+import '@finastra/divider';
+import '@finastra/icon';
+import '@finastra/icon-button';
+import '@finastra/list';
+import { ServicesRandomUserModule } from '@finastra/services/randomuser';
+import '@finastra/skeleton';
 import { HomeComponent } from './home.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    MatCardModule,
-    SkeletonTextModule,
     RouterModule.forChild([{ path: '', pathMatch: 'full', component: HomeComponent }]),
-    ServicesCatsModule,
+    ServicesRandomUserModule,
   ],
   declarations: [HomeComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class HomeModule {}
+export class HomeModule { }
