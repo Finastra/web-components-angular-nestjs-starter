@@ -97,7 +97,7 @@ Server
   - Go to [apps/server/src/main.ts](./apps/server/src/main.ts) and uncomment
   - Go to [apps/server/src/app/app.module.ts](./apps/server/src/app/app.module.ts) and uncomment
 
-> For more details about web-components here is the [Cookbook](https://finastra.github.io/finastra-design-system) 📖
+> For more details about web-components here are the [Cookbook](https://finastra.github.io/finastra-design-system) 📖
 
 <br>
 
