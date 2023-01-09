@@ -89,9 +89,12 @@
     "@angular/core": "14.0.6",
     "@angular/forms": "14.0.6",
     "@angular/language-service": "14.0.6",
+    "@angular/material": "14.0.6",
     "@angular/platform-browser": "14.0.6",
     "@angular/platform-browser-dynamic": "14.0.6",
     "@angular/router": "14.0.6",
+    "@finastra/angular-components": "^3.4.0",
+    "@finastra/angular-theme": "^3.4.0",
     "@golevelup/nestjs-testing": "^0.1.2",
     "@nestjs/schematics": "^8.0.0",
     "@nestjs/testing": "^8.0.0",
@@ -106,9 +109,9 @@
     "@nrwl/workspace": "14.4.3",
     "@types/jest": "27.4.1",
     "@types/node": "18.0.0",
+    "apollo-server-core": "^2.25.3",
     "@typescript-eslint/eslint-plugin": "5.30.7",
     "@typescript-eslint/parser": "5.30.7",
-    "apollo-server-core": "^2.25.3",
     "concurrently": "^6.0.2",
     "cypress": "^6.0.1",
     "dotenv": "10.0.0",
@@ -117,10 +120,10 @@
     "eslint-plugin-cypress": "^2.10.3",
     "jest": "27.5.1",
     "jest-preset-angular": "11.1.2",
-    "nx": "14.4.3",
     "prettier": "2.7.1",
     "ts-jest": "27.1.4",
     "ts-node": "10.8.2",
-    "typescript": "4.7.4"
+    "typescript": "4.7.4",
+    "nx": "14.4.3"
   }
 }

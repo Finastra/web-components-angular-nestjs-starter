@@ -12,7 +12,5 @@ import '@finastra/search-input';
 import '@finastra/sidenav';
 import '@finastra/user-profile';
 
-import '@popperjs/core';
-
 @NgModule({})
 export class FDSModule { }
