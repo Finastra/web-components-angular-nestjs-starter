@@ -10,7 +10,7 @@
 
 .title {
   @include fds.typography(headline-3);
-  @include fds.text-color(on-surface);
+  @include fds.color(on-surface);
 }
 
 .home {
